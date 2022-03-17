@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+body,
+html {
+  height: 100%;
+  line-height: 1;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #31485c;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  background: url("../image/gory.jpg");
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+  margin: 0 20px;
+  border-radius: 5%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+ul li:hover {
+  -webkit-box-shadow: 0 0 0 7px #31485c, 0 0 0 7px #fff;
+          box-shadow: 0 0 0 7px #31485c, 0 0 0 7px #fff;
+  background: url("../image/1646171054137467840.jpg");
+  background-size: cover;
+}
+
+ul li:nth-child(2) {
+  background: url("../image/Residence-and-Villas-Aerial.jpg");
+  background-size: cover;
+}
+
+ul li:nth-child(2):hover {
+  background: url("../image/02.jpg");
+  background-size: cover;
+}
+
+ul li .content {
+  position: absolute;
+  bottom: 250px;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  visibility: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  opacity: 0;
+  -webkit-transform: translateX(-40%) translateY(-70px);
+          transform: translateX(-40%) translateY(-70px);
+}
+
+ul li:hover .content {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateX(-40%) translateY(0px);
+          transform: translateX(-40%) translateY(0px);
+}
+
+ul li .content2 {
+  -webkit-transform: translateX(20%) translateY(-70px);
+          transform: translateX(20%) translateY(-70px);
+}
+
+ul li:hover .content2 {
+  -webkit-transform: translateX(20%) translateY(0px);
+          transform: translateX(20%) translateY(0px);
+}

@@ -1,0 +1,70 @@
+@import "null.scss";
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #31485c;
+}
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 15px;
+    font-weight: 500;
+}
+ul {
+    display: flex;
+}
+ul li {
+    position: relative;
+    list-style: none;
+    background: url("../image/gory.jpg");
+    background-size: cover;
+    width: 320px;
+    height: 320px;
+    margin: 0 20px;
+    border-radius: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 0 7px #31485c, 0 0 0 7px #fff;
+        background: url("../image/1646171054137467840.jpg");
+        background-size: cover;
+    }
+    &:nth-child(2) {
+        background: url("../image/Residence-and-Villas-Aerial.jpg");
+        background-size: cover;
+        &:hover {
+            background: url("../image/02.jpg");
+            background-size: cover;
+        }
+    }
+}
+ul li .content {
+    position: absolute;
+    bottom: 250px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    transition: 0.6s;
+    opacity: 0;
+    transform: translateX(-40%) translateY(-70px);
+}
+ul li:hover .content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-40%) translateY(0px);
+}
+ul li .content2 {
+    transform: translateX(20%) translateY(-70px);
+}
+ul li:hover .content2 {
+    transform: translateX(20%) translateY(0px);
+}
